@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Search</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="search-container">
+    <h1>Stock Search</h1>
+    <form id="searchForm">
+        <label for="ticker">Enter Stock Ticker Symbol<span class="required">*</span></label>
+        <input type="text" id="ticker" required>
+        
+        <div class="button-group">
+            <button type="submit">Search</button>
+            <button type="button" id="clearBtn">Clear</button>
+        </div>
+    </form>
+</div>
+
+    
+    <div class="tabs">
+        <button class="tab active" data-tab="company">Company Outlook</button>
+        <button class="tab" data-tab="stock">Stock Summary</button>
+        <button class="tab" data-tab="history">Search History</button>
+    </div>
+    
+    <div id="company" class="tab-content active">
+        <h2>Company Outlook</h2>
+        <table id="companyTable">
+            <tr><td>Enter a ticker symbol to view company data</td></tr>
+        </table>
+    </div>
+    
+    <div id="stock" class="tab-content">
+        <h2>Stock Summary</h2>
+        <table id="stockTable">
+            <tr><td>Enter a ticker symbol to view stock data</td></tr>
+        </table>
+    </div>
+    
+    <div id="history" class="tab-content">
+        <h2>Search History</h2>
+        <table id="historyTable">
+            <tr><td>Your search history will appear here</td></tr>
+        </table>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

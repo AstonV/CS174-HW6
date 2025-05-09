@@ -1,0 +1,333 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Search Form */
+#searchForm {
+    margin-bottom: 30px;
+  
+}
+
+#searchForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.search-row {
+    margin-bottom: 5px;
+}
+
+#ticker {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 80px;
+}
+
+button#clearBtn {
+    background-color: #f44336;
+}
+
+/* Tab Styling */
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+    border-bottom: 3px solid transparent;
+}
+
+.tab.active {
+    color: #000;
+    font-weight: bold;
+    border-bottom: 3px solid #4CAF50;
+}
+
+.tab-content {
+    display: none;
+    padding: 0;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Error Message Styling */
+#error {
+    color: #d32f2f;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fde0e0;
+    border-radius: 4px;
+    display: none;
+}
+
+/* History Ticker Links */
+.history-ticker {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.history-ticker:hover {
+    text-decoration: underline;
+}
+
+/* Center the form container */
+.search-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 2px solid red; /* Red border as shown in your image */
+    border-radius: 8px;
+    background: white;
+}
+
+/* Title styling */
+.search-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form layout adjustments */
+/* Search Form Styling */
+.search-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#searchForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+#ticker {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+#ticker:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border: none;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: translateY(-1px);
+}
+
+button#clearBtn {
+    background-color: #95a5a6;
+    color: white;
+}
+
+button#clearBtn:hover {
+    background-color: #7f8c8d;
+    transform: translateY(-1px);
+}
+
+.required {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Focus states for better accessibility */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+}
+
+/* Required asterisk */
+.required {
+    color: #f44336;
+}
+.cache-notice {
+    color: #4CAF50;
+    font-style: italic;
+    margin: 10px 0;
+    padding: 5px;
+    border-left: 3px solid #4CAF50;
+}
+.cache-notice {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    border-left: 4px solid #4caf50;
+    transition: opacity 1s ease;
+}
+
+.cache-icon {
+    font-weight: bold;
+    margin-right: 8px;
+    color: #4caf50;
+}
+
+.new-data {
+    animation: highlight 2s ease-out;
+}
+
+@keyframes highlight {
+    from { background-color: #e8f5e9; }
+    to { background-color: transparent; }
+}
+/* Error message styling */
+.error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    padding: 12px 15px;
+    margin: 15px 0;
+    display: none;
+    font-weight: bold;
+}
+
+/* Table message styling (for errors, loading, empty states) */
+.table-error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 12px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 1px solid #f5c6cb;
+}
+
+.table-message {
+    color: #666;
+    padding: 12px;
+    text-align: center;
+    font-style: italic;
+}
+
+.loading-message {
+    color: #666;
+    padding: 12px;
+    text-align: center;
+    font-style: italic;
+}
+
+.loading-message:after {
+    content: '...';
+    animation: dots 1.5s steps(5, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% { content: '.'; }
+    40% { content: '..'; }
+    60%, 100% { content: '...'; }
+}
+/* Add to your CSS */
+.search-container {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
